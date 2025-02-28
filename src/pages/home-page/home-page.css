@@ -1,0 +1,46 @@
+.home-page{
+    background-color: #fff; 
+    min-height: 100vh;
+    height: auto;
+    width: calc(100% - 220px - 270px);
+    position: absolute;
+    top: 0;
+    left: 220px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.home-page .posts-sction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 480px;
+
+}
+.posts-sction .create-quizz-section{
+    width: 100%;
+    background-color: #F9F9F9;
+    border-radius:5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+.posts-sction .create-quizz-section h3{
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.posts-sction .create-quizz-section button{
+    background-color: #fff;
+    border: 1px solid #0066CC;
+    color: #0066CC;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.posts-sction .create-quizz-section button:hover{
+    opacity: 0.6;
+}   
