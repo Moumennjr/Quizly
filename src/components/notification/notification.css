@@ -6,10 +6,77 @@
     right: 0;
     box-shadow: 0 0 5px rgba(205, 205, 205, 0.763);
     background-color: #fff;
-    padding: 20px;
+    padding: 13px;
     display: flex;
     flex-direction: column;
     transition: all 0.5s ease;
+    z-index: 1;
+}
+
+.notification-container header {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.notification-container header .close {
+    position: absolute;
+    font-size: 1.5rem;
+    left: 0;
+    width: 25px;
+    padding: 5px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: var(--tran-02);
+}
+
+.notification-container header .notif-icon {
+    position: absolute;
+    font-size: 1.6rem;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    left: -80px;
+    color: var(--text-color);
+    cursor: pointer;
+    box-shadow: 0 0 5px #dbdbdb;
+    transition: var(--tran-01);
+    transform: scale(0);
+}
+.notification-container header .notif-icon .nbr-not{
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    font-size: 0.7rem;
+    background-color: #fa383e;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.notification-container header .close:hover {
+    opacity: 0.7;
+}
+
+.notification-container header .notif-icon:hover {
+    background-color: #faf8f8;
+}
+
+.notification-container header h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-color);
 }
 
 .notification-container .notif-type {
@@ -39,26 +106,24 @@
 }
 
 .notification-container .notification {
-    flex: 1;
     width: 100%;
 }
 
-.notification-container .open-close {
-    width: 40px;
-    height: 40px;
-    background-color: #fff;
-    position: absolute;
-    top: 20px;
-    left: -40px;
-    box-shadow: -3px 0 3px rgba(230, 230, 230, 0.763);
-    border-radius: 5px 0 0 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+.close-notif {
+    transform: translateX(270px);
 }
-.open-close i{
-    font-size: 1.6rem;
-    color: #333;
-    transition: all 0.5s ease;
+
+.close-notif header .notif-icon {
+    transform: scale(1);
+}
+
+.notification-container .overflow {
+    overflow-x: hidden;
+    flex: 1;
+}
+
+.notification-container .content {
+    width: 300%;
+    display: flex;
+    transition: var(--tran-01);
 }

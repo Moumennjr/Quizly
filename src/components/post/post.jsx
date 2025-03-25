@@ -8,7 +8,6 @@ function Post() {
             <div className="header">
                 <MsgNot image="person.png" username="Username" msg="2/11/2025" />
                 <div className="unfollow-mask">
-                    <p>Unfollow</p>
                     <i className="bi bi-x-lg"></i>
                 </div>
             </div>

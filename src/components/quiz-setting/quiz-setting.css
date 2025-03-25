@@ -1,0 +1,30 @@
+.quiz-setting{
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    outline: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--text-color);
+    padding: 5px;
+    border-radius: var(--radius);
+    cursor: pointer;
+} 
+.quiz-setting span{
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.quiz-setting i{
+    font-size: 1rem;
+    padding: 0 5px;
+    height: 100%;
+}
+.quiz-setting .arrow{
+    border-left: 1px solid #cbcbcb;
+    padding-left: 10px;
+    margin-left: 5px;
+}

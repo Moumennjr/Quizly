@@ -1,0 +1,236 @@
+.filter{
+    height: 100vh;
+    width: 300px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 13px;
+    transition: all 0.5s ease;
+}
+.filter header{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.filter header .close{
+    position: absolute;
+    font-size: 1.5rem;
+    left: 0;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: var(--tran-02);
+}
+.filter header  .slider{
+    position: absolute;
+    font-size: 1.6rem;
+    padding: 10px;
+    border-radius: 50%;
+    left: -75px;
+    color: var(--text-color);
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 5px #dbdbdb;
+    transition: var(--tran-01);
+    transform: scale(0);
+}
+.filter header .close:hover{
+    opacity: 0.7;
+}
+.filter header  .slider:hover{
+    background-color: #faf8f8;
+}
+.filter header h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.filter .menu{
+    height: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.filter .type{
+    margin-bottom: 20px;
+}
+.filter .filter-types .sorted{
+    display: flex;
+    flex-direction: column;
+}
+.filter .filter-types .title{
+    color: #31373D;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+.filter .buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.filter .buttons button{
+    height: 35px;
+    flex: 1;    
+    font-size: 0.8rem;
+    border-radius: var(--radius);
+    outline: none;
+    border: 1px solid var(--border-color);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: var(--tran-02);
+}
+.filter-types .buttons button:hover{
+    background-color: #f0f0f086;
+}
+.filter-types .top{
+    display: flex;
+    height: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.filter-types .top .reset{
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.filter-types .date-input{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.filter-types .date-input span{
+    font-size: 0.7rem;
+    color: var(--text-color);
+}
+
+.filter-types .date .dates-section{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    gap: 10px;
+}
+.filter-types .date .dates-section input{
+    color: var(--text-color);
+    height: 35px;
+    padding: 5px;
+    font-size: 0.7rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+    outline: none;
+    background-color: #FAFAFA;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0.5;
+    height: 15px;
+    width: 15px;
+    padding: 3px;
+    border-radius: 8px;
+    background-color: #ebebeb;
+    cursor: pointer;
+}
+.filter .dropdown{
+    height: 35px;
+    width: 100%;
+    background-color: #FAFAFA;
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding:0 10px;
+    transition: var(--tran-02);
+}
+.dropdown button{
+    position: absolute;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+    top: calc(50% - 10px);
+    background-color: #ebebeb;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.dropdown i{
+    transition: var(--tran-02);
+}
+.dropdown span{
+    color: var(--text-color);
+    font-size: 0.8rem;
+}
+.dropdown ul{
+    list-style: none;
+    position: absolute;
+    background-color: red;
+    top: 100%;
+    width: 100%;
+    height: 107px;
+    overflow-y: scroll;
+    left: 0;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: #FAFAFA;
+    border:1px solid var(--border-color);
+    border-radius:0 0 var(--radius) var(--radius);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease;
+    z-index: 2;
+}
+.dropdown ul li{
+    color: var(--text-color);
+    font-size: 0.8rem;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 3px;
+    transition: all 0.2s ease;
+}
+.dropdown ul li:hover{
+    background-color: #f0f0f0;
+}
+.dropdown ul li:last-child{
+    margin-bottom: 0;
+}
+.filter .droped{
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.filter .droped ul{
+    visibility: visible;
+    opacity: 1;
+}
+.filter .droped i{
+    transform: rotate(180deg);
+}
+#reset-all{
+    border-color: var(--primary-color);
+    color: var(--primary-color);    
+}
+#apply-filters{
+    color: #fff;
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+.filter .buttons .selected{
+    background-color: #E6F0FF;
+}
+.close-filter{
+    transform: translateX(300px);
+}
+.close-filter header .slider{
+    transform: scale(1);
+}

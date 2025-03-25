@@ -1,0 +1,39 @@
+.Question-side{
+    background-color: #F5F5F5;
+    border-radius: var(--radius);
+    padding: 15px 10px 10px 10px;
+}
+.Question-side h4{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.Question-side h4 span{
+    padding: 4px 11px;
+    margin-right: 10px;
+    background-color: #E0E0E0;
+    border-radius: var(--radius);
+}
+.Question-side .choice-delete{
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+    height: 25px;
+    margin-top: 5px;
+    align-items: center;
+}
+.Question-side .choice-delete span{
+    font-size: 0.8rem;
+    margin-left: 7px;
+}
+.Question-side .choice-delete span i{
+    font-size: 1.1rem;
+    position: relative;
+    top: 3px;
+    left: -5px;
+    margin: 0 2px;
+}
+.Question-side .choice-delete .delete{
+    cursor: pointer;
+    font-size: 1.13rem;
+}

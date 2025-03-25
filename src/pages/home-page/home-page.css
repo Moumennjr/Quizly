@@ -2,10 +2,9 @@
     background-color: #fff; 
     min-height: 100vh;
     height: auto;
-    width: calc(100% - 220px - 270px);
-    position: absolute;
-    top: 0;
-    left: 220px;
+    width: calc(100% - 86px);
+    position: relative;
+    left: 86px;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -32,15 +31,16 @@
     font-size: 1.1rem;
     text-align: center;
 }
-.posts-sction .create-quizz-section button{
-    background-color: #fff;
+.posts-sction .create-quizz-section a{
+    text-decoration: none;
     border: 1px solid #0066CC;
     color: #0066CC;
     padding: 5px;
+    text-align: center;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.posts-sction .create-quizz-section button:hover{
+.posts-sction .create-quizz-section a:hover{
     opacity: 0.6;
 }   

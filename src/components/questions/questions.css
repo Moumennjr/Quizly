@@ -1,0 +1,38 @@
+.questions-container{
+    width: 270px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 13px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(214, 214, 214);
+    z-index: 1;
+}
+.questions-container header{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.questions-container h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.questions-container .question-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.questions-container .question-list button{
+    width: 100%;
+    border-radius: var(--radius);
+    outline: none;
+    border: 1px dashed #333;
+    height: 40px;
+    color: var(--text-color);
+    cursor: pointer;
+}

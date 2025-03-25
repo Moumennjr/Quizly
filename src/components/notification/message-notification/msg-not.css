@@ -8,7 +8,7 @@
 }
 
 .message-notif img {
-    width: 50px;
+    width: 45px;
     border-radius: 50%;
 }
 
@@ -22,7 +22,6 @@
     display: flex;
     gap: 15px;
 }
-
 .left-div .text {
     display: flex;
     flex-direction: column;
@@ -32,13 +31,10 @@
 .message-notif .left-div .text p {
     margin: 0;
     font-weight: 500;
-    color: #333;
+    color: var(--text-color);
+    font-size: 0.8rem;
 }
 
-.left-div .Username {
-    font-size: 1rem;
-}
-
-.left-div .message {
-    font-size: 0.75rem;
+.message-notif .left-div .text .message {
+    font-size: 0.7rem;
 }
