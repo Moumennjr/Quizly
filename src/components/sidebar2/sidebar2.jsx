@@ -1,6 +1,6 @@
 import "./sidebar2.css";
 import { useState } from "react";
-function SideBar2({close}) {
+function SideBar2({close, closeSideBar}) {
 
     const currentPage = window.location.pathname;
 
@@ -13,6 +13,7 @@ function SideBar2({close}) {
                 <img id="image1" src="/quizly.png" alt="logo" width={143} />
                 <i className='bx bx-menu' onClick={()=>{
                     setCloseSide(!closeSide);
+                    closeSideBar(!closeSide);
                 }}></i>
             </header>
             <div className="menu-bar">

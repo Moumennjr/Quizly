@@ -3,11 +3,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid var(--border-color);
+    border: none;
     outline: none;
     font-size: 0.8rem;
     font-weight: 400;
     color: var(--text-color);
+    background-color: var(--primary-color-light);
     padding: 5px;
     border-radius: var(--radius);
     cursor: pointer;

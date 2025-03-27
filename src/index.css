@@ -9,7 +9,7 @@
     /* =============== Colors =============== */
     --body-color: #fff;
     --text-color: #363636;
-    --primary-color-light: #F6F5FF;
+    --primary-color-light: #f6f6f6;
     --primary-color: #0066CC;
     --border-color: #dbdbdb;
     /* =============== Transition =============== */
@@ -17,4 +17,18 @@
     --tran-02: all 0.3s ease;
     /* =============== Border-radius =============== */
     --radius: 10px;
+}
+.shake:hover {
+    animation: shake 0.5s ease-in-out;
+}
+  
+@keyframes shake {
+    0% { transform: rotate(0); }
+    25% { transform: rotate(-20deg); }
+    50% { transform: rotate(20deg); }
+    75% { transform: rotate(-20deg); }
+    100% { transform: rotate(0); }
+}
+body{
+    background-color: var(--body-color);
 }

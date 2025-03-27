@@ -1,5 +1,5 @@
 .Question-side{
-    background-color: #F5F5F5;
+    background-color: var(--primary-color-light);
     border-radius: var(--radius);
     padding: 15px 10px 10px 10px;
 }
@@ -7,9 +7,18 @@
     font-size: 0.9rem;
     font-weight: 400;
     color: var(--text-color);
+    display: flex;
+    align-items: center;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.Question-side .question-title{
+    
 }
 .Question-side h4 span{
-    padding: 4px 11px;
+    display: block;
     margin-right: 10px;
     background-color: #E0E0E0;
     border-radius: var(--radius);
