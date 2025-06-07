@@ -1,23 +1,27 @@
 import QuestionSide from "../question-side/question-side";
 import "./questions.css"
-import { useState } from "react";
 
-function Questions({questions,setQuestions}) {
+function Questions({ questions, setQuestions }) {
 
-    console.log(questions);
 
-    console.log(questions);
+    function deleteQuestion(id) {
+        const newQuestions = questions.filter((_, index) => index !== id);
+        setQuestions(newQuestions);
+    }
+
     return (
         <div className="questions-container">
             <header>
                 <h3>Questions</h3>
             </header>
             <div className="question-list">
-                {questions.map((question, index) => (
-                    <QuestionSide key={index} id={index + 1} title={question.question} trueFalse={question.trueFalse}/>
-                ))}
+                <div className="questions">
+                    {questions.map((question, index) => (
+                        <QuestionSide key={index} id={index} title={question.question} trueFalse={question.trueFalse} deleteQuestion={deleteQuestion} />
+                    ))}
+                </div>
                 <div className="add">
-                    <button type="button" onClick={()=>{
+                    <button type="button" onClick={() => {
                         setQuestions([...questions, {
                             question: "",
                             trueFalse: false,

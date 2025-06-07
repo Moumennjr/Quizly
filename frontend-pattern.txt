@@ -1,0 +1,6 @@
+1- Create all page components with simple animations like the hovering effect.
+2- Add functionalities to the components.
+3- Add the animations and loading effect for the APIs.
+4- Handling errors (for eg: empty input, false date, ... etc)
+5- Make the page responsive.
+6- Ensure SEO and Accessibility 

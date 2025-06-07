@@ -23,11 +23,16 @@
     color: var(--text-color);
 }
 .questions-container .question-list{
+    height: calc(100% - 40px);
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
+.questions-container .question-list .questions{
+    max-height: 400px;
+    overflow: auto;
+}
 .questions-container .question-list button{
     width: 100%;
     border-radius: var(--radius);

@@ -1,4 +1,13 @@
-.quiz-setting{
+.quiz-setting-container {
+    position: relative;
+    width: 172px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz-setting {
     height: 35px;
     display: flex;
     justify-content: space-between;
@@ -12,20 +21,64 @@
     padding: 5px;
     border-radius: var(--radius);
     cursor: pointer;
-} 
-.quiz-setting span{
+}
+
+.quiz-setting span {
     width: 100px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.quiz-setting i{
+
+.quiz-setting i {
     font-size: 1rem;
     padding: 0 5px;
     height: 100%;
 }
-.quiz-setting .arrow{
+
+.quiz-setting .arrow {
     border-left: 1px solid #cbcbcb;
     padding-left: 10px;
     margin-left: 5px;
+}
+
+.quiz-setting-container ul {
+    list-style: none;
+    background-color: red;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    max-height: 107px;
+    overflow-y: auto;
+    border: 1px solid var(--border-color);
+    left: 0;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: var(--primary-color-light);
+    border-radius: 0 0 var(--radius) var(--radius);
+    transition: all 0.2s ease;
+    z-index: 2;
+    display: none;
+    opacity: 0;
+}
+
+.quiz-setting-container ul li {
+    color: var(--text-color);
+    font-size: 0.8rem;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 3px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.quiz-setting-container ul li:hover{
+    background-color: #f0f0f0;
+}
+.quiz-setting-container ul li:last-child{
+    margin-bottom: 0;
+}
+.quiz-setting-container .droped{
+    display: block;
+    opacity: 1;
 }

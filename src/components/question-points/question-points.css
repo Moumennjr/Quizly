@@ -1,0 +1,36 @@
+.question-points{
+    height: 35px;
+    max-width: 172px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--text-color);
+    background-color: var(--primary-color-light);
+    padding: 5px;
+    border-radius: var(--radius);
+}
+.question-points label {
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.question-points i {
+    font-size: 1rem;
+    padding: 0 5px;
+    height: 100%;
+}
+
+.question-points input{
+    border: none;
+    outline: none;
+    background-color: var(--primary-color-light);
+    margin-left: 10px;
+    width: 30px;
+    color: var(--text-color);
+}
