@@ -1,0 +1,140 @@
+.profile-container{
+    background-color: #FCFCFC; 
+    width: calc(100% - 240px);
+    position: relative;
+    left: 240px;
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    flex-direction: column;
+    
+    
+}
+.all{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    /* border-radius: var(--radius); */
+}
+.profile-container .information{
+    
+    display: flex;
+    padding: 30px 15px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+.profile-container .information img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+.profile-container .information .name-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 60%;
+}
+.profile-container .information .name-description p{
+    font-size: 0.9rem;
+    
+}
+.profile-container .information .name{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+.profile-container .information .name h2{
+    font-size: 1.3rem;
+    color: var(--text-color);
+    font-weight: 600;
+    margin: 0;
+}
+.profile-container .information .name button{
+    background-color: var(--body-color);
+    outline: none;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--radius);
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.profile-container .information .stats{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.profile-container .information .stats span{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.down{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+}
+.profile-container .quizzes{
+    width: 100%;    
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    border-bottom: 1px solid var(--border-color);
+}
+.profile-container .quizzes button{
+    width: 30%;
+    outline: none;
+    border: none;
+    padding: 10px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: var(--radius);
+    background-color: var(--body-color);
+    position: relative;
+    color:  #5a5a5a;
+    transition: all 0.2s ease;
+}
+.profile-container .quizzes button i{
+    position: relative;
+    top: 3px;
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+.profile-container .quizzes button:active{
+    color: #363636;
+}
+.profile-container .quizzes .selected{
+    color: var(--text-color);
+
+}
+.profile-container .quizzes .selected::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--text-color);
+    bottom: 0;
+    left: 0;
+}
+.profile-container .quizz-posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.loading{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
